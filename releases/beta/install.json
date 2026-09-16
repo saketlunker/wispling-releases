@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/saketlunker/wispling-releases/main/releases/release-manifest.schema.json",
+  "schemaVersion": 1,
+  "product": "wispling",
+  "channel": "beta",
+  "release": {
+    "version": "0.1.1-beta.6",
+    "tag": "v0.1.1-beta.6",
+    "publishedAtUtc": "2026-09-16T01:29:34.3894491Z",
+    "sourceRevision": "05f931b592540a9c312cbf6b009c9716edd2cee7"
+  },
+  "entrypoints": {
+    "powershell": "https://raw.githubusercontent.com/saketlunker/wispling-releases/main/install.ps1",
+    "npm": "wispling"
+  },
+  "artifacts": [
+    {
+      "id": "windows-x64-portable",
+      "platform": "windows",
+      "architecture": "x64",
+      "format": "zip",
+      "installStrategy": "portable-zip",
+      "fileName": "wispling_0.1.1-beta.6_windows-x64.zip",
+      "downloadUrl": "https://github.com/saketlunker/wispling-releases/releases/download/v0.1.1-beta.6/wispling_0.1.1-beta.6_windows-x64.zip",
+      "sizeBytes": 5252978,
+      "sha256": "39cb58001fdf2307e0d5b55ad2c9f7b7b3d22ac192a1b66caf4d8d307f47bed3",
+      "payload": {
+        "rootDirectory": "wispling",
+        "executableRelativePath": "wispling.exe",
+        "updateHelperRelativePath": "wispling-update-helper.exe",
+        "thirdPartyNoticesRelativePath": "THIRD-PARTY-NOTICES.txt"
+      },
+      "signature": {
+        "status": "detached_unverified",
+        "algorithm": "ed25519",
+        "keyId": "wispling-update-ed25519-066bb2fb07a0bdad",
+        "fileName": "wispling_0.1.1-beta.6_windows-x64.zip.sig",
+        "downloadUrl": "https://github.com/saketlunker/wispling-releases/releases/download/v0.1.1-beta.6/wispling_0.1.1-beta.6_windows-x64.zip.sig"
+      }
+    }
+  ],
+  "bootstrap": {
+    "fileName": "wispling-web-bootstrap.exe",
+    "sizeBytes": 859648,
+    "sha256": "1bdfbd39b164c005d58288a72c94edf2a5d30c9e63e6a65427ee7f9f065f7628",
+    "windowsTrustMode": "unsigned-beta-v1",
+    "authenticodeSubject": null,
+    "authenticodeIssuer": null,
+    "authenticodeCertificateSha256": null
+  }
+}
