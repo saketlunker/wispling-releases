@@ -6,17 +6,21 @@ It walks about, settles down for a nap, stretches and yawns. It jumps and swirls
 It has a sense of humour, too: it offers a joke, then waits for you to ask for the
 punchline. A little company while you work, without watching what you do.
 
-## Availability
+## Install
 
-**Pebble is not available to install yet.**
+One line, once. Paste it into PowerShell:
 
-The first Pebble release is being prepared as the prerelease `v0.2.0-beta.1`.
-The current [latest release](https://github.com/saketlunker/wispling-releases/releases/latest)
-is the legacy `v0.1.0` from September 14, 2026, not Pebble. It has old EXE/MSI
-installers and checksums, but no `install.ps1`.
+```powershell
+irm https://github.com/saketlunker/wispling-releases/releases/download/v0.2.0-beta.1/install.ps1 | iex
+```
 
-A tag-pinned install command will appear here after the Pebble beta is published.
-The legacy downloads and the repository-root installer do not install Pebble.
+That installs Pebble for your Windows account and starts it. No administrator
+rights, no second step.
+
+The command is pinned to the `v0.2.0-beta.1` tag on purpose. Pebble is a
+prerelease, and `releases/latest` still resolves to the legacy `v0.1.0` from
+September 14, 2026, which is not Pebble. The legacy downloads and the installer
+at the root of this repository do not install Pebble.
 
 ## A real 3D toy
 
@@ -64,10 +68,13 @@ are needed.
 %LOCALAPPDATA%\Wispling\data\  saved conversations and memories
 ```
 
-**This first beta does not auto-update.** Installing a newer release is a manual
-step. Updates replace `app\`, never `data\`. Memories survive updates and are
-kept even after uninstall. Removing the app does not erase your saved
-conversations.
+**This first beta does not update itself.** Moving to a newer release means
+running the install line again. The release after this one updates on its own:
+it checks for a new version in the background, and applies it the next time
+Pebble starts or closes, so there is nothing to run and nothing to click.
+
+Updates replace `app\`, never `data\`. Memories survive updates and are kept
+even after uninstall. Removing the app does not erase your saved conversations.
 
 ## Know before you install
 
