@@ -1,36 +1,35 @@
 # Wispling
 
-**Meet Pebble. A small blue wind-up companion for your Windows desktop.**
+**A real 3D companion, living on your Windows desktop.**
 
-It walks about, settles down for a nap, stretches and yawns. It jumps and swirls.
-It has a sense of humour, too: it offers a joke, then waits for you to ask for the
-punchline. A little company while you work, without watching what you do.
+Not a sprite, not a looping animation. A model you can take hold of and turn with
+your mouse on all three axes, rendered entirely on the CPU by one small native
+binary. No GPU, no browser engine, nothing else to install.
+
+This is the 3D beta. The creature it ships with is Pebble, a small blue wind-up
+toy that walks about, naps, stretches and yawns, jumps and swirls, and offers a
+joke then waits for you to ask for the punchline. Pebble is the first companion
+here, not the last. The 3D is the product.
 
 ## Install
 
 One line, once. Paste it into PowerShell:
 
 ```powershell
-irm https://github.com/saketlunker/wispling-releases/releases/download/v0.2.0-beta.1/install.ps1 | iex
+irm https://github.com/saketlunker/wispling-releases/releases/latest/download/install.ps1 | iex
 ```
 
-That installs Pebble for your Windows account and starts it. No administrator
-rights, no second step.
+That installs Wispling for your Windows account and starts it. No administrator
+rights, no second step, and nothing to run again afterwards.
 
-The command is pinned to the `v0.2.0-beta.1` tag on purpose. Pebble is a
-prerelease, and `releases/latest` still resolves to the legacy `v0.1.0` from
-September 14, 2026, which is not Pebble. The legacy downloads and the installer
-at the root of this repository do not install Pebble.
+## Pebble
 
-## A real 3D toy
+A round blue shell, a pale cream face, dark oval eyes and a small smile. Warm
+cheeks, copper side plates, a copper ring on top and two short dark feet.
 
-Wispling has one companion: Pebble. A round blue shell, a pale cream face, dark
-oval eyes and a small smile. Warm cheeks, copper side plates, a copper ring on top
-and two short dark feet.
-
-Turn it with your mouse on all three axes. This is real 3D, not a flat animation.
-The rendering runs entirely on the CPU in one small native Windows binary.
-No GPU required. No browser engine. No runtime to install.
+Drag it with the right mouse button and it turns on all three axes, because it is
+a model rather than a picture of one. Drag with the left and you move it; leave it
+somewhere and it stays there.
 
 ## Alive offline. Text chat by choice.
 
@@ -60,18 +59,17 @@ Saved conversations and memories are encrypted on your own disk with
 
 ## Your installation, your memories
 
-The Pebble beta installs for your Windows account only. No administrator rights
-are needed.
+The 3D beta installs for your Windows account only. No administrator rights are
+needed.
 
 ```text
 %LOCALAPPDATA%\Wispling\app\   the application
 %LOCALAPPDATA%\Wispling\data\  saved conversations and memories
 ```
 
-**This first beta does not update itself.** Moving to a newer release means
-running the install line again. The release after this one updates on its own:
-it checks for a new version in the background, and applies it the next time
-Pebble starts or closes, so there is nothing to run and nothing to click.
+**Wispling keeps itself current.** It looks for a new version quietly in the
+background and applies it the next time it starts or closes, so you never run the
+install line twice, and a companion is never interrupted to be updated.
 
 Updates replace `app\`, never `data\`. Memories survive updates and are kept
 even after uninstall. Removing the app does not erase your saved conversations.
